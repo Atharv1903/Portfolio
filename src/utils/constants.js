@@ -11,7 +11,10 @@ import {
   FaLinkedin,
   FaMediumM,
   FaJava,
-  FaFileExcel
+  FaFileExcel,
+  FaCube,
+  FaCloud,
+  FaServer
 } from "react-icons/fa";
 
 import { FaXTwitter } from "react-icons/fa6";
@@ -35,7 +38,7 @@ import {
   SiNumpy,
   SiPandas,
 } from "react-icons/si";
-import { AiFillCode } from "react-icons/ai";
+import { AiFillCode, AiOutlineDatabase } from "react-icons/ai";
 import { FaHashnode } from "react-icons/fa6";
 import {
   BsGlobe,
@@ -45,7 +48,7 @@ import {
   BsGit,
   BsMarkdown,
 } from "react-icons/bs";
-import { GiArchiveResearch, GiArtificialIntelligence } from "react-icons/gi";
+import { GiArchiveResearch, GiArtificialIntelligence, GiChart } from "react-icons/gi";
 import { FcElectronics } from "react-icons/fc";
 
 export const links = [
@@ -85,8 +88,8 @@ export const interestsData = [
     icon: BsGlobe,
   },
   {
-    interest: "Artifical Intelligence & Machine Learning",
-    icon: GiArchiveResearch,
+    interest: "AI & ML",
+    icon: GiArtificialIntelligence,
   },
   {
     interest: "Data Analysis & Visualization",
@@ -215,6 +218,29 @@ export const skillsData = [
   // },
 ];
 
+export const courseData = [
+  {
+    name: "Data Stucture & Algorithms",
+    icon: GiChart,
+  },
+  {
+    name: "Object Oriented Programming",
+    icon: FaCube,
+  },
+  {
+    name: "Operating Systems",
+    icon: FaServer,
+  },
+  {
+    name: "Database Management Systems",
+    icon: AiOutlineDatabase,
+  },
+  {
+    name: "Cloud Computing",
+    icon: FaCloud,
+  },
+];
+
 export const workData = [
   {
     company: "Kirabiz Technologies",
@@ -316,7 +342,7 @@ export const projectsData = [
   // },
   {
     type: "PROJECT",
-    title: "Puppy Culture",
+    title: "Puppy Culture : The Ultimate Pet Store",
     image: "snake-game",
     link: "https://shoppuppyculture.com/",
     source: "https://github.com/Atharv1903/Puppy_Culture",
