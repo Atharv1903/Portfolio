@@ -9,7 +9,9 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
-  FaMediumM
+  FaMediumM,
+  FaJava,
+  FaFileExcel
 } from "react-icons/fa";
 
 import { FaXTwitter } from "react-icons/fa6";
@@ -20,6 +22,8 @@ import {
   TbBrandCpp,
   TbBrandRedux,
   TbBrandBootstrap,
+  TbBrandMongodb,
+  TbBrandMysql,
 } from "react-icons/tb";
 import { BiLogoJquery, BiLogoPostgresql } from "react-icons/bi";
 import {
@@ -28,6 +32,8 @@ import {
   SiPostman,
   SiGnubash,
   SiNextdotjs,
+  SiNumpy,
+  SiPandas,
 } from "react-icons/si";
 import { AiFillCode } from "react-icons/ai";
 import { FaHashnode } from "react-icons/fa6";
@@ -65,14 +71,7 @@ export const interestsData = [
   //   interest: "Internet of Things",
   //   icon: FcElectronics,
   // },
-  // {
-  //   interest: "Market Research",
-  //   icon: GiArchiveResearch,
-  // },
-  // {
-  //   interest: "Visualization",
-  //   icon: BsFileBarGraph,
-  // },
+
   {
     interest: "Software Development",
     icon: AiFillCode,
@@ -85,9 +84,33 @@ export const interestsData = [
     interest: "Web Development",
     icon: BsGlobe,
   },
+  {
+    interest: "Artifical Intelligence & Machine Learning",
+    icon: GiArchiveResearch,
+  },
+  {
+    interest: "Data Analysis & Visualization",
+    icon: BsFileBarGraph,
+  }
 ];
 
 export const skillsData = [
+  {
+    name: "C/C++",
+    icon: TbBrandCpp,
+  },
+  {
+    name: "Java",
+    icon: FaJava,
+  },
+  {
+    name: "Python",
+    icon: FaPython,
+  },
+  {
+    name: "MySQL",
+    icon: TbBrandMysql,
+  },
   {
     name: "HTML5",
     icon: FaHtml5,
@@ -116,14 +139,8 @@ export const skillsData = [
     name: "Bootstrap",
     icon: TbBrandBootstrap,
   },
-  {
-    name: "C/C++",
-    icon: TbBrandCpp,
-  },
-  {
-    name: "Python",
-    icon: FaPython,
-  },
+  
+  
   {
     name: "ReactJS",
     icon: FaReact,
@@ -148,6 +165,10 @@ export const skillsData = [
     name: "Express",
     icon: SiExpress,
   },
+  {
+    name: "MongoDB",
+    icon: TbBrandMongodb,
+  },
   // {
   //   name: "Docker",
   //   icon: FaDocker,
@@ -156,6 +177,14 @@ export const skillsData = [
   //   name: "Postgres",
   //   icon: BiLogoPostgresql,
   // },
+  {
+    name: "NumPy",
+    icon: SiNumpy,
+  },
+  {
+    name: "Pandas",
+    icon: SiPandas,
+  },
   {
     name: "Postman",
     icon: SiPostman,
@@ -168,6 +197,10 @@ export const skillsData = [
     name: "Github",
     icon: FaGithub,
   },
+  {
+    name: "Excel",
+    icon: FaFileExcel,
+  }
   // {
   //   name: "ChatGPT",
   //   icon: GiArtificialIntelligence,
@@ -281,13 +314,13 @@ export const projectsData = [
   //   link: "https://vaheedsk36.github.io/dice-multiplayer",
   //   source: "https://github.com/vaheedsk36/dice-multiplayer",
   // },
-  // {
-  //   type: "PROJECT",
-  //   title: "Snake Game",
-  //   image: "snake-game",
-  //   link: "https://vaheedsk36.github.io/Snake-game",
-  //   source: "",
-  // },
+  {
+    type: "PROJECT",
+    title: "Puppy Culture",
+    image: "snake-game",
+    link: "https://shoppuppyculture.com/",
+    source: "https://github.com/Atharv1903/Puppy_Culture",
+  }
   // {
   //   type: "PROJECT",
   //   title: "Delta Assistant",

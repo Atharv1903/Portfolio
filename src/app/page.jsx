@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     const options = {
-      strings: ["Developer", "Coder", "Tech Enthusiast"],
+      strings: ["Developer", "Coder", "Tech Enthusiast", "AI/ML Enthusiast"],
       typeSpeed: 50,
       backSpeed: 35,
       loop: true,
