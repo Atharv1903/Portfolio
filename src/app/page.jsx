@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useCallback } from "react";
-import { Heading, Flex, Center, Image } from "@chakra-ui/react";
+import { Heading, Flex, Center, Image, Button } from "@chakra-ui/react";
 import Typed from "typed.js";
 import SocialIcons from "../components/SocialIcons";
 import Particles from "react-tsparticles";
@@ -99,6 +99,18 @@ export default function Home() {
           </RevealWrapper>
           <RevealWrapper className="load-hidden" delay={700}>
             <SocialIcons />
+          </RevealWrapper>
+          <RevealWrapper className="load-hidden" delay={800}>
+            <Button className="button1"
+              mt={5}
+              colorScheme="blue"
+              size="lg"
+              onClick={() =>
+                window.open("/files/resume.pdf", "_blank")
+              }
+            >
+              View My Resume
+            </Button>
           </RevealWrapper>
         </Flex>
       </Center>
