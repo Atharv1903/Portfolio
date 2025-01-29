@@ -20,7 +20,8 @@ import { BsFillSendFill } from "react-icons/bs";
 import RadioCard from "../../components/RadioCards";
 import { useForm } from "react-hook-form";
 import { useToast } from "@chakra-ui/react";
-import { RevealWrapper } from 'next-reveal'
+import { RevealWrapper } from 'next-reveal';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const toast = useToast();
@@ -43,19 +44,21 @@ const ContactForm = () => {
   const onSubmit = async (formData) => {
     setIsLoading(true);
     formData["interested-in"] = interestedIn;
-    const formSubmitURL = `https://fabform.io/f/${process.env.NEXT_PUBLIC_FAB_FORM_KEY}`;
-    try {
-      const response = await fetch(formSubmitURL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
 
-      if (!response.ok) {
-        throw new Error("Unable to send message ");
-      }
+    try {
+      // Use EmailJS to send the email
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, // Service ID
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, // Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          number: formData.number,
+          message: formData.message,
+          interested_in: formData["interested-in"],
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY // Public Key
+      );
 
       reset({
         name: "",
@@ -76,12 +79,13 @@ const ContactForm = () => {
     } catch (error) {
       console.error("Error sending message:", error);
       toast({
-        title: error.message,
+        title: "Failed to send message",
         status: "error",
         position: "top",
         duration: 9000,
         isClosable: true,
       });
+      setIsLoading(false);
     }
   };
 

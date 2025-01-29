@@ -2,6 +2,7 @@
 .next
 .vscode
 .env
+.env.local
 .env.production
 .env.staging
 .env.development
