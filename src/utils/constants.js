@@ -295,14 +295,14 @@ export const projectsData = [
     type: "WEB-APP",
     title: "EduTrack : School Management Platform",
     image: "movie-magnet",
-    link: null,
+    link: " https://edutrack-awi.vercel.app/",
     source: "https://github.com/Atharv1903/EduTrack",
   },
   {
     type: "WEB-APP",
     title: "CareConnect : Appointment Booking Web App",
     image: "portfolio-website",
-    link: null,
+    link: "https://careconnect-client.vercel.app/",
     source: "https://github.com/Atharv1903/CareConnect",
   },
   {
