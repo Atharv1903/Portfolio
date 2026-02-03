@@ -14,7 +14,9 @@ import {
   FaFileExcel,
   FaCube,
   FaCloud,
-  FaServer
+  FaServer,
+  FaChartLine,
+  FaBrain
 } from "react-icons/fa";
 
 import { FaXTwitter } from "react-icons/fa6";
@@ -36,7 +38,7 @@ import {
   SiGnubash,
   SiNextdotjs,
   SiNumpy,
-  SiPandas,
+  SiPandas
 } from "react-icons/si";
 import { AiFillCode, AiOutlineDatabase } from "react-icons/ai";
 import { FaHashnode } from "react-icons/fa6";
@@ -189,6 +191,10 @@ export const skillsData = [
     icon: SiPandas,
   },
   {
+    name: "Matplotlib",
+    icon: FaChartLine,
+  },
+  {
     name: "Postman",
     icon: SiPostman,
   },
@@ -236,12 +242,55 @@ export const courseData = [
     icon: AiOutlineDatabase,
   },
   {
+    name: "Artificial Intelligence & Machine Learning",
+    icon: FaBrain,
+  },
+  {
     name: "Cloud Computing",
     icon: FaCloud,
   },
 ];
 
 export const workData = [
+  {
+    company: "Dataeaze Systems Pvt. Ltd.",
+    designation: "Software Engineer - GenAI & Data",
+    duration: "May 2025 - Present",
+    companyImg: "dataeaze.png",
+    description: (
+      <>
+        <ul>
+          <li>
+            Designed and developed production-grade software systems combining AI, data engineering, and backend development
+            for enterprise use cases.
+          </li>
+          <li>
+            Built AI-driven document intelligence platforms to process SOP and regulatory PDFs for compliance and audit
+            automation.
+          </li>
+          <li>
+            Developed end-to-end pipelines for Risk & Control Matrix (RCM) generation, extracting regulations, processes,
+            risks, and controls using LLMs and semantic search.
+          </li>
+          <li>
+            Implemented regulatory impact analysis by mapping regulatory clauses to SOP processes using vector embeddings and
+            similarity scoring.
+          </li>
+          <li>
+            Designed and implemented scalable backend APIs and data pipelines in Python to support AI workflows and frontend
+            applications.
+          </li>
+          <li>
+            Ensured explainability and audit traceability by adding source citations, document references, and structured
+            outputs.
+          </li>
+          <li>
+            Collaborated with cross-functional teams to deliver reliable, maintainable, and production-ready solutions.
+          </li>
+        </ul>
+      </>
+    ),
+  },
   {
     company: "Kirabiz Technologies",
     designation: "Front End Developer Intern",
@@ -292,28 +341,49 @@ export const workData = [
 
 export const projectsData = [
   {
-    type: "WEB-APP",
+    type: "Industrial Projects",
+    title: "FOS iDAS : ML Ingestion & Inference Pipeline for Optical Fiber Data Analytics",
+    image: "FOSiDAS",
+    // link: "",
+    // source: "",
+  },
+  {
+    type: "Industrial Projects",
+    title: "RCM Generator : Automated Risk & Control Matrix Generation System",
+    image: "RCM",
+    // link: "",
+    // source: "",
+  },
+  {
+    type: "Industrial Projects",
+    title: "Impact Analyzer : Regulatory Impact Analysis Automation Tool",
+    image: "ImpactAnalyzer",
+    // link: "",
+    // source: "",
+  },
+  {
+    type: "Personal Projects",
     title: "EduTrack : School Management Platform",
     image: "movie-magnet",
     link: " https://edutrack-awi.vercel.app/",
     source: "https://github.com/Atharv1903/EduTrack",
   },
   {
-    type: "WEB-APP",
+    type: "Personal Projects",
     title: "CareConnect : Appointment Booking Web App",
     image: "portfolio-website",
     link: "https://careconnect-client.vercel.app/",
     source: "https://github.com/Atharv1903/CareConnect",
   },
   {
-    type: "WEB-APP",
+    type: "Personal Projects",
     title: "Estate Genius : Predictive Real Estate Insights",
     image: "weather-app",
     link: null,
     source: "https://github.com/Atharv1903/Estate-Genius",
   },
   {
-    type: "WEB-APP",
+    type: "Personal Projects",
     title: "Hotel Adiraj : Hotel Management System ",
     image: "landing-page",
     link: null,
@@ -341,7 +411,7 @@ export const projectsData = [
   //   source: "https://github.com/vaheedsk36/dice-multiplayer",
   // },
   {
-    type: "PROJECT",
+    type: "Industrial Projects",
     title: "Puppy Culture : The Ultimate Pet Store",
     image: "snake-game",
     link: "https://shoppuppyculture.com/",

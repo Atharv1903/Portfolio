@@ -35,9 +35,10 @@ const Page = () => {
                 width={["20rem", "30rem", "20rem"]}
                 height={["20rem", "30rem", "20rem"]}
                 marginBottom={["1rem", "1rem", null]}
+                marginTop={["1rem", "8rem", null]}
               />
 
-              <Box textAlign="justify">
+              {/* <Box textAlign="justify">
                 <Heading size="xl" mb={3}>
                   👋 Hey there
                 </Heading>
@@ -62,7 +63,48 @@ const Page = () => {
                   Happy coding! 🖥️
                   <br />
                 </Text>
+              </Box> */}
+              <Box textAlign="justify">
+                <Heading size="xl" mb={3}>
+                  👋 Hey there
+                </Heading>
+                <br />
+                <Text>
+                  I&apos;m <span className="name">Atharv</span>, a 
+                  <strong> Software Engineer – GenAI & Data</strong> at{" "}
+                  <strong>Dataeaze Systems Pvt. Ltd.</strong>. I specialize in building 
+                  <span className="tech"> AI-driven systems</span> that transform unstructured 
+                  data into actionable insights, with a strong focus on regulatory, audit, 
+                  and analytics use cases.
+                </Text>
+                <br />
+                <Text>
+                  My work spans across <span className="tech">Generative AI</span>, 
+                  <span className="tech"> backend data pipelines</span>, and 
+                  <span className="tech"> ML-powered applications</span>. I&apos;ve built 
+                  end-to-end solutions for automated Risk & Control Matrix (RCM) generation, 
+                  regulatory impact analysis, and scalable document intelligence platforms 
+                  using LLMs, semantic search, and modern web interfaces.
+                </Text>
+                <br />
+                <Text>
+                  With a strong problem-solving mindset, I enjoy designing clean, reliable, 
+                  and explainable systems that are production-ready and auditor-friendly. 
+                  I&apos;m constantly exploring new tools and techniques to stay ahead in the 
+                  rapidly evolving GenAI and data engineering space.
+                </Text>
+                <br />
+                <Text>
+                  📫 Open to collaborations and exciting projects, I&apos;m eager to connect 
+                  with fellow developers, AI practitioners, and tech enthusiasts. Let&apos;s 
+                  build something impactful together!
+                </Text>
+                <Text>
+                  Happy coding! 🖥️
+                  <br />
+                </Text>
               </Box>
+
             </SimpleGrid>
           </RevealWrapper>
           <RevealWrapper className="load-hidden" id="interests" delay={600}>
